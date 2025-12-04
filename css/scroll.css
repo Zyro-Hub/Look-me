@@ -1,0 +1,45 @@
+/* Scroll Navigation Styles */
+#scroll-indicators {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 5;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#scroll-indicators.show {
+    opacity: 0.6;
+}
+
+.scroll-hint {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.scroll-hint:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+}
+
+.scroll-hint svg {
+    width: 24px;
+    height: 24px;
+}
+
+.scroll-hint.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
