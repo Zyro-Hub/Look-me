@@ -1,10 +1,4 @@
 # Videos folder (large files)
-videos/
-*.mp4
-*.avi
-*.mov
-*.mkv
-*.webm
 
 # Python cache
 __pycache__/
